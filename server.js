@@ -8,7 +8,7 @@ require("./connection");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {
-  cors: "https://ecom-iplanet.netlify.app/",
+  cors: "https://hk-ecom-iplanet.netlify.app/",
   methods: ["GET", "POST", "PATCH", "DELETE"],
 });
 
