@@ -41,6 +41,9 @@ app.post("/create-payment", async (req, res) => {
     res.status(400).json(e.message);
   }
 });
+app.get("/", (req, res) => {
+  res.status(200).send("<h1>Welcome to iPlanet Server</h1>");
+});
 
 server.listen(8080, () => {
   console.log("server running at port", 8080);
